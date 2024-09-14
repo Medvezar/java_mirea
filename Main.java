@@ -3,21 +3,20 @@ import java.util.Scanner;
 
 public class Main {
 
-    public void To_String(){
-        
+    public static void To_String(Car2 car){
+        System.out.println("--------------------------------");
+        System.out.println("Модель: " + car.getModel());
+        System.out.println("Цвет: " + car.getColor());
+        System.out.println("Лицензия: " + car.getLicense());
+        System.out.println("год: " + car.getYear());
+        System.out.println("Возраст: " + car.getAge());
+        System.out.println("--------------------------------");
     }
 
     public static void main(String[] args) {
-    final double ROUBLES_PER_YUAN = 11.91;
-
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.print("Введите сумму в юанях: ");
-    int yuan = scanner.nextInt();
-
-    double roubles = yuan * ROUBLES_PER_YUAN;
-
-    System.out.println("Конвертированная сумма: " + roubles);
     
+    Scanner scanner = new Scanner(System.in);
+    Car2 car = new Car2();
+    To_String(car);
   }
 }

@@ -85,13 +85,12 @@ public class Car2 {
         return year;
     }
     
-    public void getAge() {
+    public String getAge() {
         int n = thisYear - this.year;
         if (n < 0){
-            System.out.println("У нас тут не киберпанк 2077");
-            return;
+            return "У нас тут не киберпанк 2077";
         }
-        System.out.println("Возраст Автомобиля: " + n);
+        return "Возраст Автомобиля: " + n;
     }
 
 }
